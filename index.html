@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jqliingu :)</title>
+	<link rel="icon" href="title.ico" />
+	<style type="text/css">
+		body {
+			margin: 0px;
+			height: 100vh;
+		}
+		.authority {
+			color: white;
+			line-height:10vh;/*垂直居中*/
+		}
+		img {
+			height: 10vh;
+			border-radius: 50%;
+			padding: 2.5vh;
+		}
+		p{
+			/*margin-top: 15px;*/
+			padding: 2vh;
+			margin: 0;
+		}
+		.flexRow{
+			display: flex;
+		}
+		.flexCol{
+			display: flex;
+			flex-direction: column;
+		}
+		.allCenter{
+			align-items: center;
+			justify-content: center;
+		}
+		/*
+		flex-grow：元素在同一容器中对可分配空间的分配比率，及扩展比率
+		flex-shrink：如果空间不足，元素的收缩比率
+		flex-basis：元素的伸缩基准值
+
+		*/
+		header{
+			background-color:#ff5546;
+			/*height: 15px;*/
+			align-items: center;
+			justify-content: center;
+			flex: 0 0 auto;
+		}
+		.mainContent{
+			flex: 1 0 auto;
+		}
+		footer{
+			background-color: #ff5546;
+			/*height: 10vh;*/
+			align-items: center;
+			justify-content: center;
+			flex: 0 0 auto;
+		}
+		a{
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body class="flexCol">
+	<!-- 第一种写法： -->
+	<!-- <div style="background-color:#ff5546;text-align:center;padding: 15px;">
+		<img src="logo.jpg"/>
+	</div>
+	<div style="margin:125px auto;padding: 120px;">
+		<p>jqllingu</p>
+		<p>❤</p>
+		<p>yhx</p>
+	</div>
+	<div style="background-color: #ff5546;padding: 30px;text-align: center;">
+		<span class="authority">@jqliingu</span>
+	</div> -->
+
+	<!-- 升级版本 第二种写法： -->
+<!-- 	<div style="background-color:#ff5546;text-align:center;height: 15vh;">
+		<img src="logo.jpg"/>
+	</div>
+	<div style="height: 35vh;padding: 20vh;">
+		<p>jqllingu</p>
+		<p>❤</p>
+		<p>yhx</p>
+	</div>
+	<div style="background-color: #ff5546;height: 10vh;text-align: center;">
+		<span class="authority">@jqliingu</span>
+	</div> -->
+
+	<!-- flex布局 第三种写法 -->
+	<header class="flexRow">
+		<img src="logo.jpg"/>
+	</header>
+	<div class="mainContent flexCol allCenter">
+		<p>jqllingu</p>
+		<p>❤</p>
+		<p>yhx</p>
+		<a style="margin: 20px" href="22Music/index.html" >22 🥳</a>
+	</div>
+	<footer class="flexCol">
+		<span class="authority">@jqliingu</span>
+	</footer>
+</body>
+</html>
